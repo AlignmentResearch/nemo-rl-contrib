@@ -1,77 +1,11 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.10"
 resolution-markers = [
     "python_full_version >= '3.13'",
     "python_full_version == '3.12.*'",
     "python_full_version < '3.12'",
 ]
-
-[manifest]
-
-[[manifest.dependency-metadata]]
-name = "causal-conv1d"
-version = "1.5.4"
-requires-dist = ["torch", "packaging", "ninja"]
-
-[[manifest.dependency-metadata]]
-name = "deep-ep"
-version = "1.2.1+bfded34"
-requires-dist = ["torch", "packaging", "ninja"]
-
-[[manifest.dependency-metadata]]
-name = "deep-gemm"
-version = "2.0.0+7b6b556"
-requires-dist = ["torch", "packaging", "ninja"]
-
-[[manifest.dependency-metadata]]
-name = "drain3"
-version = "0.9.11"
-requires-dist = ["jsonpickle", "cachetools>=4.2.1"]
-
-[[manifest.dependency-metadata]]
-name = "flash-attn"
-requires-dist = ["torch", "einops", "setuptools", "psutil", "ninja"]
-
-[[manifest.dependency-metadata]]
-name = "logsage"
-version = "0.1.5"
-requires-dist = ["drain3>=0.9.11,<0.10.0", "langchain>=0.3.27,<0.4.0", "langchain-core>=0.3.0,<1.0.0", "langchain-nvidia-ai-endpoints>=0.3.18,<0.4.0", "nh3>=0.3.1,<0.4.0", "numpy", "pandas", "pydantic-settings>=2.11.0,<3.0.0", "requests>=2.32.5,<3.0.0"]
-
-[[manifest.dependency-metadata]]
-name = "mamba-ssm"
-version = "2.2.6.post3"
-requires-dist = ["torch", "packaging", "ninja", "causal-conv1d"]
-
-[[manifest.dependency-metadata]]
-name = "megatron-bridge"
-version = "0.0.0"
-requires-dist = ["transformers>=5.0.0,<=5.3.0", "peft>=0.18.1", "datasets>=2.20.0", "accelerate", "diffusers>=0.36.0", "peft>=0.18.0", "einops", "imageio", "imageio-ffmpeg", "omegaconf>=2.3.0", "tensorboard>=2.19.0", "typing-extensions", "rich", "wandb>=0.25.0", "six>=1.17.0", "regex>=2024.11.6", "pyyaml>=6.0.2", "tqdm>=4.67.1", "hydra-core>1.3,<=1.3.2", "qwen-vl-utils", "transformer-engine[pytorch,core-cu12]", "mamba-ssm", "nvidia-resiliency-ext", "causal-conv1d", "flash-linear-attention", "timm", "open-clip-torch>=3.2.0", "mlflow>=3.9.0", "comet-ml>=3.50.0", "torch>=2.6.0"]
-
-[[manifest.dependency-metadata]]
-name = "nv-grouped-gemm"
-version = "1.1.4.post7"
-requires-dist = ["setuptools", "wheel", "torch", "numpy"]
-
-[[manifest.dependency-metadata]]
-name = "sglang"
-version = "0.5.10"
-requires-dist = ["ipython", "aiohttp", "apache-tvm-ffi>=0.1.5,<0.2", "anthropic>=0.20.0", "blobfile==3.0.0", "build", "compressed-tensors", "cuda-python==12.9", "decord2", "datasets", "einops", "fastapi", "flashinfer-python==0.6.7.post2", "flashinfer-cubin==0.6.7.post2", "gguf", "interegular", "llguidance>=0.7.11,<0.8.0", "modelscope", "msgspec", "ninja", "numpy", "nvidia-cutlass-dsl>=4.4.1", "nvidia-ml-py", "openai-harmony==0.0.4", "openai==2.6.1", "orjson", "outlines==0.1.11", "packaging", "partial-json-parser", "pillow", "prometheus-client>=0.20.0", "psutil", "py-spy", "pybase64", "pydantic", "python-multipart", "pyzmq>=25.1.2", "quack-kernels>=0.3.0", "requests", "scipy", "sentencepiece", "setproctitle", "flash-attn-4>=4.0.0b4", "sglang-kernel==0.4.1", "soundfile==0.13.1", "tiktoken", "timm==1.0.16", "torch-memory-saver==0.0.9", "torch==2.9.1", "torchao==0.9.0", "torchaudio==2.9.1", "torchcodec==0.9.1 ; (platform_machine != 'aarch64' and platform_machine != 'arm64' and platform_machine != 'armv7l') or sys_platform != 'linux'", "torchvision", "tqdm", "mistral-common>=1.9.0", "transformers==5.3.0", "uvicorn", "uvloop", "watchfiles", "xgrammar==0.1.32", "smg-grpc-servicer>=0.5.0"]
-
-[[manifest.dependency-metadata]]
-name = "sglang-kernel"
-version = "0.4.1"
-requires-dist = ["torch", "scikit-build-core", "wheel"]
-
-[[manifest.dependency-metadata]]
-name = "transformer-engine"
-version = "2.14.0+71bbefb"
-requires-dist = ["torch", "pydantic", "importlib-metadata>=1.0", "packaging"]
-
-[[manifest.dependency-metadata]]
-name = "transformer-engine-torch"
-version = "2.14.0+71bbefb"
-requires-dist = ["torch", "transformer-engine"]
 
 [[package]]
 name = "aiohappyeyeballs"
@@ -262,11 +196,11 @@ wheels = [
 
 [[package]]
 name = "certifi"
-version = "2026.4.22"
+version = "2026.10.19"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/25/ee/6caf7a40c36a1220410afe15a1cc64993a1f864871f698c0f93acb72842a/certifi-2026.4.22.tar.gz", hash = "sha256:8d455352a37b71bf76a79caa83a3d6c25afee4a385d632127b6afb3963f1c580", size = 137077, upload-time = "2026-04-22T11:26:11.191Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a6/bd/1436c50cc46699de0230fbaacc1d1de7bfec413176099949e9d5112e88f2/certifi-2026.10.19.tar.gz", hash = "sha256:035c1e85572b141bf1c3a3eff0e33a8eb74917522f2559075ff8d2fea780a1ae", size = 137598, upload-time = "2026-10-20T02:24:16.604Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/22/30/7cd8fdcdfbc5b869528b079bfb76dcdf6056b1a2097a662e5e8c04f42965/certifi-2026.4.22-py3-none-any.whl", hash = "sha256:3cb2210c8f88ba2318d29b0388d1023c8492ff72ecdde4ebdaddbb13a31b1c4a", size = 135707, upload-time = "2026-04-22T11:26:09.372Z" },
+    { url = "https://files.pythonhosted.org/packages/c4/51/29046e48f693c54e5b7412216d447a1d8362c9653148d98c02cdf65fa733/certifi-2026.10.19-py3-none-any.whl", hash = "sha256:42d35340cc5b9ba78e818ddbff0c5b1c2b779de448a340fd1b989f5fa8670e1b", size = 136464, upload-time = "2026-10-20T02:24:15.072Z" },
 ]
 
 [[package]]
@@ -572,7 +506,7 @@ name = "exceptiongroup"
 version = "1.3.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "typing-extensions", marker = "python_full_version < '3.12'" },
+    { name = "typing-extensions" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/50/79/66800aadf48771f6b62f7eb014e352e5d06856655206165d775e675a02c9/exceptiongroup-1.3.1.tar.gz", hash = "sha256:8b412432c6055b0b7d14c310000ae93352ed6754f70fa8f7c34141f91c4e3219", size = 30371, upload-time = "2025-11-21T23:01:54.787Z" }
 wheels = [
@@ -1110,21 +1044,6 @@ test = [
     { name = "pytest" },
     { name = "pytest-mock" },
 ]
-
-[package.metadata]
-requires-dist = [
-    { name = "click", specifier = ">=8.1" },
-    { name = "kubernetes", specifier = ">=29.0" },
-    { name = "nrl-k8s", extras = ["test"], marker = "extra == 'all'" },
-    { name = "omegaconf", specifier = ">=2.3" },
-    { name = "pydantic", specifier = ">=2.5" },
-    { name = "pytest", marker = "extra == 'test'", specifier = ">=7.4" },
-    { name = "pytest-mock", marker = "extra == 'test'", specifier = ">=3.12" },
-    { name = "pyyaml", specifier = ">=6.0" },
-    { name = "ray", extras = ["default"], specifier = ">=2.52" },
-    { name = "tenacity", specifier = ">=8.2" },
-]
-provides-extras = ["test", "all"]
 
 [[package]]
 name = "oauthlib"
